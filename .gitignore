@@ -1,0 +1,31 @@
+# Секреты Google API
+google_integration/service_account.json
+google_integration/client_secret*.json
+google_integration/token.pickle
+
+# База данных
+data/
+*.db
+*.sqlite
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.env
+venv/
+.venv/
+
+# Скриншоты
+*.png
+*.jpg
+
+# IDE
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,21 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.31.1
+sqlalchemy>=2.0.35
+pydantic>=2.12.0
+pydantic[email]
+
+# Google API (версии из vph02)
+google-auth==2.37.0
+google-auth-oauthlib==1.2.1
+google-api-python-client==2.154.0
+google-auth-httplib2==0.2.0
+python-dotenv==1.0.1
+
+# GUI (installed system-wide, listed for reference)
+# tkinter — built into Python, не устанавливается через pip
+
+# HTTP client for GUI
+requests==2.32.3
+
+# Dev / hot-reload
+watchdog>=5.0.0

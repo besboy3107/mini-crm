@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    container_name: mini_crm_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - crm_data:/app/data
+    environment:
+      - DATABASE_URL=sqlite:///data/crm.db
+    restart: unless-stopped
+
+volumes:
+  crm_data:
