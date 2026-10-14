@@ -568,7 +568,7 @@ class GoogleTab(tk.Frame):
         tk.Entry(settings_frame, textvariable=self.cs_var, width=50).grid(row=1, column=1, padx=8)
 
         tk.Label(settings_frame, text="ID папки Google Drive (опционально):").grid(row=2, column=0, sticky="e", pady=3)
-        self.folder_var = tk.StringVar(value=os.getenv("GOOGLE_FOLDER_ID", "1HZJC5XAILxPE-whrS1NaWa51stoXCUQ2"))
+        self.folder_var = tk.StringVar(value=os.getenv("GOOGLE_FOLDER_ID", ""))
         tk.Entry(settings_frame, textvariable=self.folder_var, width=50).grid(row=2, column=1, padx=8)
 
         # Export buttons
